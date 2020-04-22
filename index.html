@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/calculadora.css">
+  </head>
+  <body>
+
+    <div id="fondo">  <!-- No interfiere en nada, es el fondo -->
+
+    </div>
+
+    <div id="calcu">  <!-- Div de la calculadora -->
+      <div class="contenedor" id="resultado"> <!-- Contenedor del resultado -->
+        <p id='texto'></p>
+      </div>  <!-- Fin del contenedor resultado -->
+      <div class="contenedor" id="botones">
+        <div class="bot" id="ac">
+          <p>AC</p>
+        </div>
+        <div class="bot" id="signos">
+          <p>+/-</p>
+        </div>
+        <div class="bot" id="porcentaje">
+          <p>%</p>
+        </div>
+        <div class="bot orange" id="division">
+          <p>÷</p>
+        </div>
+        <div class="bot numeros" id="b7">
+          <p>7</p>
+        </div>
+        <div class="bot numeros" id="b8">
+          <p>8</p>
+        </div>
+        <div class="bot numeros" id="b9">
+          <p>9</p>
+        </div>
+        <div class="bot orange" id="multiplicacion">
+          <p>x</p>
+        </div>
+        <div class="bot numeros" id="b4">
+          <p>4</p>
+        </div>
+        <div class="bot numeros" id="b5">
+          <p>5</p>
+        </div>
+        <div class="bot numeros" id="b6">
+          <p>6</p>
+        </div>
+        <div class="bot orange" id="resta">
+          <p>-</p>
+        </div>
+        <div class="bot numeros" id="b1">
+          <p>1</p>
+        </div>
+        <div class="bot numeros" id="b2">
+          <p>2</p>
+        </div>
+        <div class="bot numeros" id="b3">
+          <p>3</p>
+        </div>
+        <div class="bot orange" id="suma">
+          <p>+</p>
+        </div>
+        <div class="bot-cero" id="cero">
+          <p>0</p>
+        </div>
+        <div class="bot numeros" id="coma">
+          <p>.</p>
+        </div>
+        <div class="bot orange" id="igual">
+          <p>=</p>
+        </div>
+      </div>  <!-- Fin del contenedor de los botones -->
+    </div>  <!-- Fin del div calculadora -->
+
+    <script src="jquery/jquery-3.2.1.min.js"></script>  <!-- Los links de los scripts van antes de cerrar el body -->
+    <script src="Clase_calculadora.js"></script>
+    <script type="text/javascript">
+      $("#b1").click(function() { //  Agrega 1 a la barra
+        document.getElementById('texto').innerHTML = document.getElementById('texto').innerHTML + "1";
+      });
+
+      $("#b2").click(function() { //  Agrega 2 a la barra
+        document.getElementById('texto').innerHTML = document.getElementById('texto').innerHTML + "2";
+      });
+
+      $("#b3").click(function() { //  Agrega 3 a la barra
+        document.getElementById('texto').innerHTML = document.getElementById('texto').innerHTML + "3";
+      });
+
+      $("#b4").click(function() { //  Agrega 4 a la barra
+        document.getElementById('texto').innerHTML = document.getElementById('texto').innerHTML + "4";
+      });
+
+      $("#b5").click(function() { //  Agrega 5 a la barra
+        document.getElementById('texto').innerHTML = document.getElementById('texto').innerHTML + "5";
+      });
+
+      $("#b6").click(function() { //  Agrega 6 a la barra
+        document.getElementById('texto').innerHTML = document.getElementById('texto').innerHTML + "6";
+      });
+
+      $("#b7").click(function() { //  Agrega 7 a la barra
+        document.getElementById('texto').innerHTML = document.getElementById('texto').innerHTML + "7";
+      });
+
+      $("#b8").click(function() { //  Agrega 8 a la barra
+        document.getElementById('texto').innerHTML = document.getElementById('texto').innerHTML + "8";
+      });
+
+      $("#b9").click(function() { //  Agrega 9 a la barra
+        document.getElementById('texto').innerHTML = document.getElementById('texto').innerHTML + "9";
+      });
+
+      $("#cero").click(function() { //  Agrega 0 a la barra
+        document.getElementById('texto').innerHTML = document.getElementById('texto').innerHTML + "0";
+      });
+
+      $("#ac").click(function() { //  Elimina el contenido
+        document.getElementById('texto').innerHTML = "";
+      });
+    </script>
+  </body>
+
+
+</html>
