@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+#fondo {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url(../imagenes/colors.png);
+  filter: blur(25px);
+  z-index: 0;
+}
+
+#calcu {
+  position: absolute;
+  z-index: 1;
+  width: 500px;
+  height: 750px;
+  background: #262626;
+  top: -35px;
+  left: calc(50% - 250px);
+  bottom: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 0 2px;
+  transform: scale(0.8);
+}
+
+/* .bot {
+  margin: 6.9px;
+  width: 107px;
+  height: 107px;
+  border-radius: 50%;
+  display: inline-block;
+} */
+
+#resultado {
+  width: 500px;
+  height: 125px;
+  border-radius: 5px 5px 0 0;
+}
+
+#botones {
+  padding: 10px;
+}
+
+.bot {
+  margin: 4.4px;
+  width: 107px;
+  height: 107px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.bot-cero {
+  width: 224px;
+  height: 107px;
+  border-radius: 50px;
+  background: #555555;
+  margin: 5px;
+  display: inline-block;
+}
+
+.bot-cero p {
+  color: #262626;
+  position: fixed;
+  font-size: 50px;
+  font-weight: lighter;
+  margin: 25px 25px;
+  color: white;
+}
+
+#b9 p , #b8 p , #b7 p , #b6 p , #b5 p , #b4 p , #b3 p , #b2 p , #b1 p , #coma p {
+  color: white;
+  position: fixed;
+  font-size: 50px;
+  font-weight: lighter;
+  margin: 26px 40px;
+}
+
+#igual:hover , #multiplicacion:hover , #suma:hover , #resta:hover , #division:hover {
+  background: #ffeed2;
+}
+
+#suma p {
+  position: fixed;
+  font-size: 70px;
+  font-weight: lighter;
+  margin: 15px 32px;
+  color: white;
+}
+
+#resta p {
+  position: fixed;
+  font-size: 100px;
+  font-weight: lighter;
+  margin: -9px 36px;
+  color: white;
+}
+
+#multiplicacion p {
+  position: fixed;
+  font-size: 70px;
+  font-weight: lighter;
+  margin: 10px 35px;
+  color: white;
+}
+
+#division p {
+  position: fixed;
+  font-size: 100px;
+  font-weight: lighter;
+  margin: 1px 27px;
+  color: white;
+}
+
+#igual p {
+  position: fixed;
+  font-size: 100px;
+  font-weight: lighter;
+  margin: 0px 25px;
+  color: white;
+}
+
+#suma , #resta , #multiplicacion , #division , #igual {
+  background: orange;
+}
+
+.bot:hover {
+  cursor: pointer;
+  background: lightgrey;
+}
+
+.bot-cero:hover {
+  background: lightgrey;
+  cursor: pointer;
+}
+
+.numeros {
+  background: #555555;
+}
+#ac , #porcentaje {
+  background: #a9a9a9;
+}
+
+#ac p {
+  color: #262626;
+  position: fixed;
+  font-size: 50px;
+  font-weight: lighter;
+  margin: 25px 20px;
+}
+
+#signos p {
+  color: #262626;
+  position: fixed;
+  font-size: 50px;
+  font-weight: lighter;
+  margin: 25px 20px;
+}
+
+#porcentaje p {
+  color: #262626;
+  position: fixed;
+  font-size: 50px;
+  font-weight: lighter;
+  margin: 25px 30px;
+}
+
+#signos , #porcentaje {
+  background: #a9a9a9;
+}
+
+#signos:hover , #porcentaje:hover {
+  background: lightgrey;
+}
+
+#ac:hover {
+  cursor: pointer;
+  background: lightgrey;
+}
+
+#resultado p {
+  position: fixed;
+  color: #fff;
+  font-size: 60px;
+  right: 10px;
+}
